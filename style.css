@@ -25,7 +25,30 @@ header {
   color: #ff9933;
   margin-bottom: 12px;
 }
+/* This centers the three images and puts space between them */
+.header-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap; /* This makes them stack on phones so they don't look squished */
+}
 
+/* This makes your three new images a consistent, reasonable size */
+.side-img {
+    width: 200px; 
+    height: auto;
+    border: 2px solid #f39c12; /* Adds a nice gold border to match your theme */
+    border-radius: 8px;
+}
+
+/* This fixes the Nepal Flag so it's not too big */
+header img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
 header h1 {
   font-family: 'Merriweather', serif;
   font-size: 36px;
