@@ -56,7 +56,23 @@ header h1 {
   color: #ffffff;
   margin-bottom: 10px;
 }
+/* This controls the Hanuman, Sapana, and Mahadev images */
+.side-img {
+    width: 200px;           /* Adjust this number to change the size */
+    height: auto;           /* This keeps the image from looking squished */
+    border: 2px solid #f39c12; 
+    border-radius: 10px;    /* Makes the corners look nice and rounded */
+    margin: 10px;           /* Adds space around each image */
+}
 
+/* This container keeps them in a nice row instead of stacking */
+.header-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;        /* Helps them fit on a phone screen later */
+    padding: 20px;
+}
 header p {
   font-size: 16px;
   color: #999;
