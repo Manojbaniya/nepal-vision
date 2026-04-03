@@ -10,66 +10,7 @@ body {
   color: #e8e8e8;
   min-height: 100vh;
 }
-/* General Page Style */
-body {
-    background-color: #000000;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-}
 
-/* Fixed Header: Images on the sides of the title */
-.header-images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /* Keeps it from breaking on phones */
-}
-
-.side-img {
-    width: 120px; /* Perfectly sized images */
-    height: auto;
-    border: 2px solid #f39c12;
-    border-radius: 10px;
-}
-
-h1 {
-    color: #f39c12;
-    font-size: 2rem;
-    margin: 0;
-}
-
-/* Simple Roadmap Styling */
-.roadmap-section {
-    max-width: 800px;
-    margin: 40px auto;
-    text-align: left; /* Makes the list easy to read */
-}
-
-.phase {
-    border-left: 3px solid #f39c12;
-    padding-left: 20px;
-    margin-bottom: 40px;
-}
-
-.phase h3 {
-    color: #f39c12;
-    margin-top: 0;
-}
-
-ul {
-    list-style-type: "✓ "; /* Custom checkmark bullet */
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
 /* HEADER */
 header {
   text-align: center;
@@ -100,7 +41,14 @@ header {
     height: auto;
     border: 2px solid #f39c12; /* Adds a nice gold border to match your theme */
     border-radius: 8px;
+}
 
+/* This fixes the Nepal Flag so it's not too big */
+header img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
 header h1 {
   font-family: 'Merriweather', serif;
   font-size: 36px;
@@ -108,28 +56,15 @@ header h1 {
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* This centers the title and puts images on the left and right */
-.header-images {
-    display: flex;
-    justify-content: space-around; /* This pushes images to the far sides */
-    align-items: center;           /* This keeps them level with each other */
-    padding: 10px;
-    background-color: #1a1a1a;     /* Matches your dark theme */
-}
-
-/* This makes the images much smaller so they stay on the "side" */
+/* This controls the Hanuman, Sapana, and Mahadev images */
 .side-img {
-    width: 100px;                  /* Small enough to stay out of the way */
-    height: auto;
-    border-radius: 50%;            /* This makes them circular (optional) */
-    border: 2px solid #f39c12;     /* Gold border */
+    width: 200px;           /* Adjust this number to change the size */
+    height: auto;           /* This keeps the image from looking squished */
+    border: 2px solid #f39c12; 
+    border-radius: 10px;    /* Makes the corners look nice and rounded */
+    margin: 10px;           /* Adds space around each image */
 }
 
-/* This ensures the Nepal Flag doesn't break the layout */
-header img {
-    max-width: 120px;
-    height: auto;
-}
 /* This container keeps them in a nice row instead of stacking */
 .header-images {
     display: flex;
