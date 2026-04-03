@@ -41,14 +41,7 @@ header {
     height: auto;
     border: 2px solid #f39c12; /* Adds a nice gold border to match your theme */
     border-radius: 8px;
-}
 
-/* This fixes the Nepal Flag so it's not too big */
-header img {
-    max-width: 250px;
-    display: block;
-    margin: 0 auto;
-}
 header h1 {
   font-family: 'Merriweather', serif;
   font-size: 36px;
@@ -56,15 +49,28 @@ header h1 {
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* This controls the Hanuman, Sapana, and Mahadev images */
-.side-img {
-    width: 200px;           /* Adjust this number to change the size */
-    height: auto;           /* This keeps the image from looking squished */
-    border: 2px solid #f39c12; 
-    border-radius: 10px;    /* Makes the corners look nice and rounded */
-    margin: 10px;           /* Adds space around each image */
+/* This centers the title and puts images on the left and right */
+.header-images {
+    display: flex;
+    justify-content: space-around; /* This pushes images to the far sides */
+    align-items: center;           /* This keeps them level with each other */
+    padding: 10px;
+    background-color: #1a1a1a;     /* Matches your dark theme */
 }
 
+/* This makes the images much smaller so they stay on the "side" */
+.side-img {
+    width: 100px;                  /* Small enough to stay out of the way */
+    height: auto;
+    border-radius: 50%;            /* This makes them circular (optional) */
+    border: 2px solid #f39c12;     /* Gold border */
+}
+
+/* This ensures the Nepal Flag doesn't break the layout */
+header img {
+    max-width: 120px;
+    height: auto;
+}
 /* This container keeps them in a nice row instead of stacking */
 .header-images {
     display: flex;
